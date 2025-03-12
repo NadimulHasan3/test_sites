@@ -14,7 +14,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load pre-trained ML model
-MODEL_URL = "https://drive.google.com/uc?export=download&id=1lt4kheq4ludUxkURPhsRjPdj99ERVZHu"
+MODEL_URL = "https://drive.google.com/uc?export=download&id=1x2ip-V9LRgy9lWvvRofbTlRdMYMLeOZN"
 MODEL_PATH = "model.h5"  # Change this to your model file
 
 # Download the model if not present
