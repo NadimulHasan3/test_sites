@@ -6,7 +6,7 @@ from werkzeug.utils import secure_filename
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 
 # Configure upload folder
 UPLOAD_FOLDER = 'static/uploads'
