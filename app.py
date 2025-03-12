@@ -15,7 +15,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load pre-trained ML model
 MODEL_URL = "https://drive.google.com/uc?export=download&id=1x2ip-V9LRgy9lWvvRofbTlRdMYMLeOZN"
-MODEL_PATH = "model.h5"  # Change this to your model file
+MODEL_PATH = "model.keras"  # Change this to your model file
 
 # Download the model if not present
 if not os.path.exists(MODEL_PATH):
