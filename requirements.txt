@@ -1,7 +1,7 @@
-Flask==3.0.2
+Flask==3.0.0
 tensorflow==2.18.0
-numpy==1.26.4  # Compatible with TF 2.18.0
+numpy==1.26.4
 pillow==10.2.0
 gunicorn==21.2.0
-h5py==3.11.0  # Upgraded for TF compatibility
+h5py==3.11.0
 gdown==5.1.0
