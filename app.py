@@ -6,6 +6,14 @@ from werkzeug.utils import secure_filename
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
+# Limit memory growth
+physical_devices = tf.config.list_physical_devices("GPU")
+for device in physical_devices:
+    tf.config.experimental.set_memory_growth(device, True)
+    
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
+
 app = Flask(__name__, template_folder=".")
 
 # Configure upload folder
