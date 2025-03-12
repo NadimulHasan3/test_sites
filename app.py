@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
-
+import tensorflow as tf
 # Limit memory growth
 physical_devices = tf.config.list_physical_devices("GPU")
 for device in physical_devices:
